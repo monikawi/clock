@@ -1,0 +1,32 @@
+{
+  "name": "clock",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "start:dev": "webpack-dev-server --mode development --host 0.0.0.0 --hot --open --useLocalIp",
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "Monika Wiercinska",
+  "license": "ISC",
+  "keywords": [],
+  "homepage": "https://monikawi.github.io/clock",
+  "description": "",
+  "dependencies": {
+    "@babel/polyfill": "^7.4.3",
+    "browserslist": "^4.5.4",
+    "gh-pages": "^2.0.1",
+    "package": "^1.0.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.1",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.23.1",
+    "webpack-dev-server": "^3.3.0"
+  }
+}
